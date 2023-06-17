@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to JupyterRTD_test&#39;s documentation! &mdash; JupyterRTD_test  documentation</title>
+  <title>&lt;no title&gt; &mdash; JupyterRTD_test  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -42,9 +42,7 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Welcome to JupyterRTD_test's documentation!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+              <div class="local-toc"><ul class="simple">
 </ul>
 </div>
         </div>
@@ -61,9 +59,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Welcome to JupyterRTD_test's documentation!</li>
+      <li class="breadcrumb-item active">&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/test.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/test.ipynb.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -71,165 +69,554 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="welcome-to-jupyterrtd-test-s-documentation">
-<h1>Welcome to JupyterRTD_test's documentation!<a class="headerlink" href="#welcome-to-jupyterrtd-test-s-documentation" title="Permalink to this heading"></a></h1>
-<div class="toctree-wrapper compound">
-</div>
-</section>
-<section id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
-</ul>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">())</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="n">device</span><span class="o">=</span><span class="s2">&quot;cuda:0&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">device</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cuda</span><span class="p">:</span><span class="mi">0</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tensor</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">device</span><span class="o">=</span><span class="s1">&#39;cuda:0&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Using torch&quot;</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Using</span> <span class="n">torch</span> <span class="mf">2.0.0</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">device_count</span><span class="p">())</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">get_device_name</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NVIDIA</span> <span class="n">GeForce</span> <span class="n">RTX</span> <span class="mi">4090</span>
-</pre></div>
-</div>
-<p>Real Test</p>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">x_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)]</span>
-<span class="n">x_train</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x_values</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-<span class="n">x_train</span> <span class="o">=</span> <span class="n">x_train</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">x_train</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x_values</span><span class="p">]</span>
-<span class="n">y_train</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y_values</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-<span class="n">y_train</span> <span class="o">=</span> <span class="n">y_train</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">y_train</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LinearRegressionModel</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_dim</span><span class="p">,</span> <span class="n">output_dim</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">(</span><span class="n">LinearRegressionModel</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">linear</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">input_dim</span><span class="p">,</span> <span class="n">output_dim</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-        <span class="n">out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">linear</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">out</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">input_dim</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">output_dim</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegressionModel</span><span class="p">(</span><span class="n">input_dim</span><span class="p">,</span> <span class="n">output_dim</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Send to cuda</p>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&quot;cuda:0&quot;</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">&quot;cpu&quot;</span><span class="p">)</span>
-<span class="n">model</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">LinearRegressionModel</span><span class="p">(</span>
-  <span class="p">(</span><span class="n">linear</span><span class="p">):</span> <span class="n">Linear</span><span class="p">(</span><span class="n">in_features</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">out_features</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bias</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">epochs</span> <span class="o">=</span> <span class="mi">1000</span>
-<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.01</span>
-<span class="n">optimizer</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="n">learning_rate</span><span class="p">)</span>
-<span class="n">criterion</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">MSELoss</span><span class="p">()</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">epochs</span><span class="p">):</span>
-    <span class="n">epoch</span> <span class="o">+=</span> <span class="mi">1</span>
-
-    <span class="c1"># .to(device) send to cuda</span>
-    <span class="n">inputs</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">x_train</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
-    <span class="n">labels</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
-
-    <span class="n">optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
-    <span class="n">outputs</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">inputs</span><span class="p">)</span>
-    <span class="n">loss</span> <span class="o">=</span> <span class="n">criterion</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
-
-    <span class="n">loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
-    <span class="n">optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
-    <span class="k">if</span> <span class="n">epoch</span> <span class="o">%</span> <span class="mi">50</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;epoch </span><span class="si">{}</span><span class="s1">, loss </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epoch</span><span class="p">,</span> <span class="n">loss</span><span class="o">.</span><span class="n">item</span><span class="p">()))</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">epoch</span> <span class="mi">50</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.40827712416648865</span>
-<span class="n">epoch</span> <span class="mi">100</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.2328658550977707</span>
-<span class="n">epoch</span> <span class="mi">150</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.13281798362731934</span>
-<span class="n">epoch</span> <span class="mi">200</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.0757543221116066</span>
-<span class="n">epoch</span> <span class="mi">250</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.04320744052529335</span>
-<span class="n">epoch</span> <span class="mi">300</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.024643903598189354</span>
-<span class="n">epoch</span> <span class="mi">350</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.014055978506803513</span>
-<span class="n">epoch</span> <span class="mi">400</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.008016953244805336</span>
-<span class="n">epoch</span> <span class="mi">450</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.004572576377540827</span>
-<span class="n">epoch</span> <span class="mi">500</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.0026080235838890076</span>
-<span class="n">epoch</span> <span class="mi">550</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.001487524015828967</span>
-<span class="n">epoch</span> <span class="mi">600</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.0008484188001602888</span>
-<span class="n">epoch</span> <span class="mi">650</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.00048391061136499047</span>
-<span class="n">epoch</span> <span class="mi">700</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.0002760067582130432</span>
-<span class="n">epoch</span> <span class="mi">750</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">0.00015742452524136752</span>
-<span class="n">epoch</span> <span class="mi">800</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">8.978872938314453e-05</span>
-<span class="n">epoch</span> <span class="mi">850</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">5.121196591062471e-05</span>
-<span class="n">epoch</span> <span class="mi">900</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">2.920936640293803e-05</span>
-<span class="n">epoch</span> <span class="mi">950</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">1.6659612811054103e-05</span>
-<span class="n">epoch</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">loss</span> <span class="mf">9.501958629698493e-06</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># predicted = model(torch.from_numpy(x_train).requires_grad_()).data.numpy()</span>
-<span class="c1"># predicted</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="s1">&#39;model.pkl&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;model.pkl&#39;</span><span class="p">))</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">All</span> <span class="n">keys</span> <span class="n">matched</span> <span class="n">successfully</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-</section>
+  <dl>
+<dt>{</dt><dd><dl>
+<dt>&quot;cells&quot;: [</dt><dd><dl>
+<dt>{</dt><dd><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 11,
+&quot;id&quot;: &quot;b2c2f227&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;import torchn&quot;,
+&quot;# test&quot;</p>
+</div></blockquote>
+<p>]</p>
+</dd>
+</dl>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 12,
+&quot;id&quot;: &quot;2455656f&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [</p>
+<blockquote>
+<div><dl>
+<dt>{</dt><dd><p>&quot;name&quot;: &quot;stdout&quot;,
+&quot;output_type&quot;: &quot;stream&quot;,
+&quot;text&quot;: [</p>
+<blockquote>
+<div><p>&quot;Falsen&quot;</p>
+</div></blockquote>
+<p>]</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;print(torch.cuda.is_available())&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 13,
+&quot;id&quot;: &quot;7c91ba98&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [</p>
+<blockquote>
+<div><dl>
+<dt>{</dt><dd><p>&quot;name&quot;: &quot;stdout&quot;,
+&quot;output_type&quot;: &quot;stream&quot;,
+&quot;text&quot;: [</p>
+<blockquote>
+<div><p>&quot;cpun&quot;</p>
+</div></blockquote>
+<p>]</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;x = torch.tensor([1,2,3], device=&quot;cpu&quot;)n&quot;,
+&quot;print(x.device)&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 14,
+&quot;id&quot;: &quot;3316aee8&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [</p>
+<blockquote>
+<div><dl>
+<dt>{</dt><dd><dl>
+<dt>&quot;data&quot;: {</dt><dd><dl class="simple">
+<dt>&quot;text/plain&quot;: [</dt><dd><p>&quot;tensor([1, 2, 3])&quot;</p>
+</dd>
+</dl>
+<p>]</p>
+</dd>
+</dl>
+<p>},
+&quot;execution_count&quot;: 14,
+&quot;metadata&quot;: {},
+&quot;output_type&quot;: &quot;execute_result&quot;</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;x&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 15,
+&quot;id&quot;: &quot;e83445ed&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [</p>
+<blockquote>
+<div><dl>
+<dt>{</dt><dd><p>&quot;name&quot;: &quot;stdout&quot;,
+&quot;output_type&quot;: &quot;stream&quot;,
+&quot;text&quot;: [</p>
+<blockquote>
+<div><p>&quot;Using torch 1.12.1n&quot;</p>
+</div></blockquote>
+<p>]</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;print(&quot;Using torch&quot;, torch.__version__)&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 16,
+&quot;id&quot;: &quot;63f6f4c2&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [</p>
+<blockquote>
+<div><dl>
+<dt>{</dt><dd><p>&quot;name&quot;: &quot;stdout&quot;,
+&quot;output_type&quot;: &quot;stream&quot;,
+&quot;text&quot;: [</p>
+<blockquote>
+<div><p>&quot;0n&quot;</p>
+</div></blockquote>
+<p>]</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;print(torch.cuda.device_count())&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 17,
+&quot;id&quot;: &quot;3e2b5718&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;# print(torch.cuda.get_device_name(0))&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;attachments&quot;: {},
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;id&quot;: &quot;5d41a651&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;Real Test&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 18,
+&quot;id&quot;: &quot;e35e66ab&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [</p>
+<blockquote>
+<div><dl>
+<dt>{</dt><dd><dl>
+<dt>&quot;data&quot;: {</dt><dd><dl class="simple">
+<dt>&quot;text/plain&quot;: [</dt><dd><p>&quot;(11, 1)&quot;</p>
+</dd>
+</dl>
+<p>]</p>
+</dd>
+</dl>
+<p>},
+&quot;execution_count&quot;: 18,
+&quot;metadata&quot;: {},
+&quot;output_type&quot;: &quot;execute_result&quot;</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;import numpy as npn&quot;,
+&quot;x_values = [i for i in range(11)]n&quot;,
+&quot;x_train = np.array(x_values, dtype = np.float32)n&quot;,
+&quot;x_train = x_train.reshape(-1,1)n&quot;,
+&quot;x_train.shape&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 19,
+&quot;id&quot;: &quot;d79b3874&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [</p>
+<blockquote>
+<div><dl>
+<dt>{</dt><dd><dl>
+<dt>&quot;data&quot;: {</dt><dd><dl class="simple">
+<dt>&quot;text/plain&quot;: [</dt><dd><p>&quot;(11, 1)&quot;</p>
+</dd>
+</dl>
+<p>]</p>
+</dd>
+</dl>
+<p>},
+&quot;execution_count&quot;: 19,
+&quot;metadata&quot;: {},
+&quot;output_type&quot;: &quot;execute_result&quot;</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;y_values = [2*i + 1 for i in x_values]n&quot;,
+&quot;y_train = np.array(y_values, dtype=np.float32)n&quot;,
+&quot;y_train = y_train.reshape(-1, 1)n&quot;,
+&quot;y_train.shape&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 20,
+&quot;id&quot;: &quot;29ec468a&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;import torch.nn as nn&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 21,
+&quot;id&quot;: &quot;72a0dfc8&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;class LinearRegressionModel(nn.Module):n&quot;,
+&quot;    def __init__(self, input_dim, output_dim):n&quot;,
+&quot;        super(LinearRegressionModel, self).__init__()n&quot;,
+&quot;        self.linear = nn.Linear(input_dim, output_dim)n&quot;,
+&quot;n&quot;,
+&quot;    def forward(self, x):n&quot;,
+&quot;        out = self.linear(x)n&quot;,
+&quot;        return out&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 22,
+&quot;id&quot;: &quot;d2398b7b&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;input_dim = 1n&quot;,
+&quot;output_dim = 1n&quot;,
+&quot;model = LinearRegressionModel(input_dim, output_dim)&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;attachments&quot;: {},
+&quot;cell_type&quot;: &quot;markdown&quot;,
+&quot;id&quot;: &quot;855badc5&quot;,
+&quot;metadata&quot;: {},
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;Send to cuda&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 23,
+&quot;id&quot;: &quot;1d10b061&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [</p>
+<blockquote>
+<div><dl>
+<dt>{</dt><dd><dl>
+<dt>&quot;data&quot;: {</dt><dd><dl class="simple">
+<dt>&quot;text/plain&quot;: [</dt><dd><p>&quot;LinearRegressionModel(n&quot;,
+&quot;  (linear): Linear(in_features=1, out_features=1, bias=True)n&quot;,
+&quot;)&quot;</p>
+</dd>
+</dl>
+<p>]</p>
+</dd>
+</dl>
+<p>},
+&quot;execution_count&quot;: 23,
+&quot;metadata&quot;: {},
+&quot;output_type&quot;: &quot;execute_result&quot;</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;device = torch.device(&quot;cuda:0&quot; if torch.cuda.is_available() else &quot;cpu&quot;)n&quot;,
+&quot;model.to(device)&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 24,
+&quot;id&quot;: &quot;f6509d2b&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;epochs = 1000n&quot;,
+&quot;learning_rate = 0.01n&quot;,
+&quot;optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)n&quot;,
+&quot;criterion = nn.MSELoss()&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 25,
+&quot;id&quot;: &quot;b23db1a9&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [</p>
+<blockquote>
+<div><dl>
+<dt>{</dt><dd><p>&quot;name&quot;: &quot;stdout&quot;,
+&quot;output_type&quot;: &quot;stream&quot;,
+&quot;text&quot;: [</p>
+<blockquote>
+<div><p>&quot;epoch 50, loss 0.008630900643765926n&quot;,
+&quot;epoch 100, loss 0.004922772757709026n&quot;,
+&quot;epoch 150, loss 0.002807763172313571n&quot;,
+&quot;epoch 200, loss 0.001601436990313232n&quot;,
+&quot;epoch 250, loss 0.0009133908315561712n&quot;,
+&quot;epoch 300, loss 0.0005209620576351881n&quot;,
+&quot;epoch 350, loss 0.00029714530683122575n&quot;,
+&quot;epoch 400, loss 0.00016948148550000042n&quot;,
+&quot;epoch 450, loss 9.666730329627171e-05n&quot;,
+&quot;epoch 500, loss 5.51330522284843e-05n&quot;,
+&quot;epoch 550, loss 3.1446139473700896e-05n&quot;,
+&quot;epoch 600, loss 1.7933869457920082e-05n&quot;,
+&quot;epoch 650, loss 1.0230058251181617e-05n&quot;,
+&quot;epoch 700, loss 5.835618139826693e-06n&quot;,
+&quot;epoch 750, loss 3.329520495753968e-06n&quot;,
+&quot;epoch 800, loss 1.8985450651598512e-06n&quot;,
+&quot;epoch 850, loss 1.0828505310200853e-06n&quot;,
+&quot;epoch 900, loss 6.178506168907916e-07n&quot;</p>
+</div></blockquote>
+<p>]</p>
+</dd>
+</dl>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;name&quot;: &quot;stdout&quot;,
+&quot;output_type&quot;: &quot;stream&quot;,
+&quot;text&quot;: [</p>
+<blockquote>
+<div><p>&quot;epoch 950, loss 3.5266614872853097e-07n&quot;,
+&quot;epoch 1000, loss 2.0096017294690682e-07n&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;for epoch in range(epochs):n&quot;,
+&quot;    epoch += 1n&quot;,
+&quot;n&quot;,
+&quot;    # .to(device) send to cudan&quot;,
+&quot;    inputs = torch.from_numpy(x_train).to(device)n&quot;,
+&quot;    labels = torch.from_numpy(y_train).to(device)n&quot;,
+&quot;n&quot;,
+&quot;    optimizer.zero_grad()n&quot;,
+&quot;    outputs = model(inputs)n&quot;,
+&quot;    loss = criterion(outputs, labels)n&quot;,
+&quot;n&quot;,
+&quot;    loss.backward()n&quot;,
+&quot;    optimizer.step()n&quot;,
+&quot;    if epoch % 50 == 0:n&quot;,
+&quot;        print('epoch {}, loss {}'.format(epoch, loss.item()))&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 26,
+&quot;id&quot;: &quot;0484b14c&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;# predicted = model(torch.from_numpy(x_train).requires_grad_()).data.numpy()n&quot;,
+&quot;# predicted&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 27,
+&quot;id&quot;: &quot;af1c4f3d&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;torch.save(model.state_dict(), 'model.pkl')&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>&quot;cell_type&quot;: &quot;code&quot;,
+&quot;execution_count&quot;: 28,
+&quot;id&quot;: &quot;6148ebb8&quot;,
+&quot;metadata&quot;: {},
+&quot;outputs&quot;: [</p>
+<blockquote>
+<div><dl>
+<dt>{</dt><dd><dl>
+<dt>&quot;data&quot;: {</dt><dd><dl class="simple">
+<dt>&quot;text/plain&quot;: [</dt><dd><p>&quot;&lt;All keys matched successfully&gt;&quot;</p>
+</dd>
+</dl>
+<p>]</p>
+</dd>
+</dl>
+<p>},
+&quot;execution_count&quot;: 28,
+&quot;metadata&quot;: {},
+&quot;output_type&quot;: &quot;execute_result&quot;</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>],
+&quot;source&quot;: [</p>
+<blockquote>
+<div><p>&quot;model.load_state_dict(torch.load('model.pkl'))&quot;</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>}</p>
+</dd>
+</dl>
+<p>],
+&quot;metadata&quot;: {</p>
+<blockquote>
+<div><dl class="simple">
+<dt>&quot;kernelspec&quot;: {</dt><dd><p>&quot;display_name&quot;: &quot;Python 3 (ipykernel)&quot;,
+&quot;language&quot;: &quot;python&quot;,
+&quot;name&quot;: &quot;python3&quot;</p>
+</dd>
+</dl>
+<p>},
+&quot;language_info&quot;: {</p>
+<blockquote>
+<div><dl class="simple">
+<dt>&quot;codemirror_mode&quot;: {</dt><dd><p>&quot;name&quot;: &quot;ipython&quot;,
+&quot;version&quot;: 3</p>
+</dd>
+</dl>
+<p>},
+&quot;file_extension&quot;: &quot;.py&quot;,
+&quot;mimetype&quot;: &quot;text/x-python&quot;,
+&quot;name&quot;: &quot;python&quot;,
+&quot;nbconvert_exporter&quot;: &quot;python&quot;,
+&quot;pygments_lexer&quot;: &quot;ipython3&quot;,
+&quot;version&quot;: &quot;3.9.16&quot;</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>},
+&quot;nbformat&quot;: 4,
+&quot;nbformat_minor&quot;: 5</p>
+</dd>
+</dl>
+<p>}</p>
 
 
            </div>
