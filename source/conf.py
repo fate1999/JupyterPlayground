@@ -18,6 +18,7 @@ author = 'Haodong'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['nbsphinx']
+source_suffix = ['.rst', '.ipynb']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', '**.ipynb_checkpoints']
