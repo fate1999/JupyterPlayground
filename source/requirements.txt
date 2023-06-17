@@ -2,7 +2,7 @@ alabaster==0.7.13
 appdirs==1.4.4
 Babel==2.12.1
 brotlipy==0.7.0
-docutils==0.20.1
+docutils==0.19
 fonttools==4.25.0
 imagesize==1.4.1
 importlib-resources==5.12.0
