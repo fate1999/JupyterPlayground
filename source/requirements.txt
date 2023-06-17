@@ -28,3 +28,4 @@ sphinxcontrib-serializinghtml==1.1.5
 threadpoolctl==3.1.0
 torch==1.12.1
 webencodings==0.5.1
+sphinx_rtd_theme==1.2.2
