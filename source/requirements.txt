@@ -2,7 +2,7 @@ alabaster==0.7.13
 appdirs==1.4.4
 Babel==2.12.1
 brotlipy==0.7.0
-docutils==0.18.1
+docutils>=0.15,<0.19
 fonttools==4.25.0
 imagesize==1.4.1
 importlib-resources==5.12.0
@@ -18,7 +18,7 @@ pytz==2022.7.1
 scikit-learn==1.2.2
 scipy==1.10.0
 snowballstemmer==2.2.0
-Sphinx==6.2.0
+Sphinx>=4,<6
 sphinxcontrib-applehelp==1.0.4
 sphinxcontrib-devhelp==1.0.2
 sphinxcontrib-htmlhelp==2.0.1
