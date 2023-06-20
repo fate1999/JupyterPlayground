@@ -30,3 +30,5 @@ torch==1.12.1
 webencodings==0.5.1
 sphinx_rtd_theme==1.2.2
 pandoc==2.3
+sphinx
+myst-nb

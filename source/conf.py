@@ -17,8 +17,8 @@ author = 'Haodong'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['nbsphinx']
-source_suffix = ['.rst', '.ipynb']
+extensions = ['nbsphinx', 'myst_nb']
+source_suffix = ['.rst', '.ipynb', '.html']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', '**.ipynb_checkpoints']
@@ -32,4 +32,4 @@ html_theme = 'sphinx_rtd_theme'
 
 html_static_path = ['_static']
 
-master_doc = 'test'
+master_doc = 'index'
