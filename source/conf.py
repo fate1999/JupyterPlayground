@@ -11,8 +11,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'JupyterRTD_test'
-copyright = '2023, Haodong'
-author = 'Haodong'
+copyright = '2023, IDB'
+author = 'Haodong, Author2,...'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
